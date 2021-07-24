@@ -1,11 +1,17 @@
 // MENU
 
-.menu {
+#menu {
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 36px 16px;
+    transition: .5s ease;
+
+    &.sticky {
+        background-color: $black-dark;
+        z-index: 200000;
+    }
 }
 
 @media screen and (max-width: 960px) {
